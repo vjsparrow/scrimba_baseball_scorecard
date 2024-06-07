@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://db.onlinewebfonts.com/c/ab0e848e0e83a85a5af69f5acf1ebe73?family=Cursed+Timer+ULiL"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h3 class="home-away">HOME</h3>
+      <div class="score">
+        <div id="home-score" class="score-disp">0</div>
+      </div>
+      <div class="score-increment">
+        <div class="score-increment-btn" onclick="addOneHome()">+1</div>
+        <div class="score-increment-btn" onclick="addTwoHome()">+2</div>
+        <div class="score-increment-btn" onclick="addThreeHome()">+3</div>
+      </div>
+    </div>
+    <div>
+      <h3 class="home-away">AWAY</h3>
+      <div class="score">
+        <div id="away-score" class="score-disp">0</div>
+      </div>
+      <div class="score-increment">
+        <div class="score-increment-btn" onclick="addOneAway()">+1</div>
+        <div class="score-increment-btn" onclick="addTwoAway()">+2</div>
+        <div class="score-increment-btn" onclick="addThreeAway()">+3</div>
+      </div>
+    </div>
+  </div>
+  <div class="new-game-container">
+    <button id="new-game" onclick="reset()">New Game</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
